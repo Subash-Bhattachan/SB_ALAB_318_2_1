@@ -18,11 +18,18 @@ html
         if(user)
             h1 this is my page and name is ( #{user.name})and age is #{user.age}
         else 
-        a(href="/signup") Sign Up
+        
+        div.container(width ="550px", height="550px", style="background-color: beige")
+
+            a(href="/") Sign Up for More Images!
         
 
-        include ./header.pug
-        h1 This is my home page file
-        img(src="scene.jpg", alt="SCENE image")
+            include ./header.pug
+            h2 Serene Scenery....
+            img#myImage(src="scene.jpg", alt="SCENE image")
+            //- a(href="/download-image")
+            //- button.button(type='button' data-download='myImage') Download Image
+            a.button(href="/download-image") Download Image
+            include ./footer.pug
 
-        include ./footer.pug
+            

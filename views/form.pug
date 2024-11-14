@@ -2,12 +2,15 @@ html
     head 
         title Form Data 
         body 
-        h1 User Form 
-        form(action="", method="GET")
+        a(href="/home") Get a free image!
+        h2 Please Enter Your Details! 
+        form(action="", method="POST")
             label Name 
             input(type="text", name="name", placeholder="Enter Name")
             br
+            br
             label Email: 
             input(type="email", placeholder="Enter Email", name="email", required)
+            br
             br
             input(type="submit" value="Submit")
