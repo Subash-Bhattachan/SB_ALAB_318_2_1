@@ -1,0 +1,28 @@
+doctype html 
+html 
+    head 
+        title #{title}
+        link(rel="stylesheet", href="css/style.css")
+        script(src="script.js")
+
+
+    body 
+        //- p.paragraph This is my first paragraph
+
+        //- div This is my first div
+        //- h1 heading 
+
+        //- // this is my comment
+        //- div.container(width ="100", height="100", style="background-color: red") this is my div
+        h1=name
+        if(user)
+            h1 this is my page and name is ( #{user.name})and age is #{user.age}
+        else 
+        a(href="/signup") Sign Up
+        
+
+        include ./header.pug
+        h1 This is my home page file
+        img(src="scene.jpg", alt="SCENE image")
+
+        include ./footer.pug
